@@ -1,0 +1,321 @@
+post.n :: positions job occupations position 
+post.n :: posts posting outpost 
+post.n :: poste postal 
+extended.a :: extension extend expanding expanded enlarged extending stretched extensive expand increased 
+extended.a :: better enhanced 
+extended.a :: protracted stretched extending prolonged 
+let.v :: continued remained retained had 
+let.v :: derived are_made prepared 
+let.v :: 'm_leaving headed get_going got_to_go_now going_to_do leaving leave be_used got_to_go 
+let.v :: shown saw showed demonstrated 
+let.v :: rented afforded hired rent rented_out owned 
+let.v :: dropped declined 
+let.v :: forgot forgotten 
+let.v :: helped provided added included offered gave awarded 
+clean.v :: clean-up cleaned_out cleanliness cleaning_up clear 's_clean get_cleaned_up cleansing be_cleaned cleaned_up cleaned wiped_clean cleanse taken_up 
+clean.v :: given_up dropped_out 
+clean.v :: is_true potable drinkable is_healthy is_safe 
+go.v :: 'm_seeing goes_to go_back_there 's_going going_out goes_there been_to going_to 'm_going_,_too think_you_'re_going 'm_going_inside go_ahead 'm_coming 're_going_to going_in_there 
+go.v :: 're_going_now 's_going_home go_home taken_away 'm_going_away be_carried_out gotta_go 're_going_home 's_getting_away 'm_coming_home get_carried_away let_'s_get_going 
+go.v :: get_moving is_moving proceed are_making_progress 're_making_progress is_passing keep_walking moving_forward walked_away 'm_moving move_forwards keep_it_moving 
+go.v :: be_directed 
+go.v :: are_you_ready 
+go.v :: are_working going_to_happen 'm_doing_it doing_today be_done 's_happening doing_there doing_,_man 'm_doing is_going_on 
+go.v :: get_carried_away 
+function.n :: functions data operation 
+function.n :: functioning functional 
+function.n :: functionality functioning role 
+pull.v :: been_fired start_shooting shot keep_firing been_shot get_shot 
+pull.v :: get_laid lay 
+pull.v :: conferred earned 
+pull.v :: 'm_coming_over comes_up 's_happening is_arriving coming_through shows_up comes_in 'm_coming_in be_drawn is_coming is_on_his_way 'm_coming_up 'm_coming coming_in 're_coming be_making is_happening coming_up 's_coming comes_along 's_coming_in 's_coming_up 
+pull.v :: is_to_be_done be_accomplished should_be_done going_to_do be_made to_be_made be_achieved be_undertaken to_be_done supposed_to_do can_be_done 
+pull.v :: learnt derived be_learned interpreted been_learned be_derived be_learnt learned 
+pull.v :: is_taken gone took drew can_be_drawn is_removed drawn is_extracted are_drawn moving_out was_drawn withdrew remove be_taken are_taken withdraw got pulled 
+charge.n :: accusation vs allegation allegations indictment prosecution 
+charge.n :: charges fee taxa chargÃ© charged charging surcharge 
+charge.n :: encumbrances responsibility burden 
+charge.n :: capita 
+charge.n :: matters 
+letter.n :: correspondence message letters 
+letter.n :: lettre lettering letters 
+letter.n :: charter 
+raw.a :: unprocessed crude rough 
+raw.a :: rough crude 
+cross.n :: crosses crossed cross- 
+cross.n :: cross-references 
+cross.n :: crucifix 
+cross.n :: crossing crossover 
+away.r :: even_further much_further far_and_away far_away further_below away_from_here far_off farther_away a_step_further way miles_away further_away further_on one_step_further further_than_that 
+away.r :: no_longer any_longer 
+away.r :: go_away 
+away.r :: right_away 
+away.r :: outside aside apart 
+make.v :: must_be_taken is_taking shall_be_taken are_taking 
+make.v :: are_making making_it formulated_by be_developed made_here be_manufactured are_formulated 
+make.v :: be_exercised are_performed is_performed being_carried_out are_conducting 
+make.v :: lay 
+make.v :: have_done_so be_accomplished 
+make.v :: be_amended be_adopted 
+make.v :: be_accorded be_paid 
+make.v :: be_required is_needed 
+run.v :: being_managed acted structured organized owned enhanced organised worked been_organized designated conducted administrated served 
+run.v :: be_running am_leaving 'm_going 're_going_away 'm_going_now are_running be_going checking_out was_going is_going are_going 'il_be_gone 'm_running 
+run.v :: are_complete finished executed planned exhausted bound can_be_done 
+run.v :: be_pursued being_pursued running_from 
+run.v :: introduced opened initiated commenced championed circulated decreed 
+run.v :: doing be_performed worked functioning operates 
+run.v :: run_off 
+finally.r :: at_last 3.4_finally â¢_finally 4.5_finally after_all very_finally at_long_last now_finally 4.4_finally eventually lastly 3.5_finally 
+finally.r :: last last_of_all lastly 
+finally.r :: ultimately once_and_for_all definitively 
+finally.r :: turns_out 
+fix.v :: be_decided be_settled determines to_be_resolved is_resolved be_resolved be_solved been_resolved settled 
+fix.v :: mixes compounds formulates 
+fix.v :: be_made be_making is_to_be_done going_to_do develops be_doing formulates designing completes 
+fix.v :: be_repaired rectify make_things_better is_repaired fix_anything fix_things been_repaired repairs be_fixed fixed_it fix_everything be_cured is_corrected be_rectified correct looked_at be_corrected are_addressed remedy be_sorted_out repair_it repair resolve troubleshoot be_ironed_out fixes is_solved will_be_resolved solve fixed_up fixed be_helped 
+fix.v :: be_dealt_with is_addressed be_undertaken might_be_addressed be_selected be_answered be_handled 
+fix.v :: prepares be_arranged compiles arranges organizes 
+fix.v :: lays lay be_laid_down establish be_established establishing 
+acute.a :: very_severe severe worse_than_it_looks serious very_serious 
+acute.a :: urgent highly_charged very_pressing 
+acute.a :: acute-care 
+acute.a :: acutely_toxic 
+acute.a :: sharp 
+side.n :: characteristics annexes aspect 
+side.n :: sides 
+easy.a :: simple -easy really_easier too_easy easy_to_use a_little_easier extremely_easy nice_and_easy easier_for_you just_simple very_easy easy_enough particularly_easy not_difficult very_simple that_simple easier simple_enough as_easy_as_it_sounds so_simple easy_,_neo far_easier much_simpler really_easy so_much_easier easier_than_i_thought relatively_easy simpler easily pretty_easy much_easier as_simple quite_easy real_easy quite_simple as_easy_as_it_looks fairly_easy easy_to_achieve easier_for_me 
+easy.a :: convenient easily_accessible readily_available 
+easy.a :: very_straightforward more_simplified more_streamlined straightforward 
+easy.a :: very_difficult 
+easy.a :: easy-to-use user-friendly 
+charge.v :: charges expenses paid be_paid 
+charge.v :: getting_cold chilled 
+charge.v :: is_taking be_charged is_responsible held_responsible charged are_responsible are_taking is_charged got_it charged_with 
+charge.v :: load are_loaded loads be_loaded is_loaded 
+charge.v :: be_recovered be_assumed are_claiming be_received are_asking be_collected be_charged be_required is_requested lay be_requested are_demanding imposed_on_them make_demands are_requesting be_claimed are_asking_for should_be_required be_implemented be_levied be_sought be_asked be_applied incurred being_imposed have_requested is_required are_calling_for be_imposed 
+bright.a :: very_bright brightness light radiant brighter too_bright high-brightness luminous 
+bright.a :: brilliant intelligent very_bright smarter_than_i_thought absolutely_brilliant 
+bright.a :: more_promising very_encouraging very_promising quite_promising 
+bright.a :: shiny glossy glittering 
+bright.a :: well_understood fully_informed clearly_defined very_distinguished 
+call.v :: 'm_talking_to_you calls_me 'm_asking were_called 'm_telling_you was_called be_called has_called 'd_call been_called calling_you calls_you calls calling_me 'm_talking_about are_calling be_asked have_called call_back 'il_call have_asked 'm_calling_you 
+call.v :: called_it calling_it called_first called 
+call.v :: needs warrants be_required necessitates been_requested calls_for advocates be_used are_demanding be_asking is_required are_calling_for are_asking 
+call.v :: being_said 
+call.v :: called_back called_me return_my_calls please_call 
+call.v :: drew 
+call.v :: calls_for recall summoned 
+poor.a :: underprivileged poverty-stricken most_impoverished most_deprived poorer disadvantaged less_developed pro-poor less_favoured economically_disadvantaged destitute guys_poor poorest less_advantaged very_poorest most_disadvantaged resource-poor socially_disadvantaged low extremely_limited very_poor impoverished poorly_developed 
+poor.a :: unsatisfactory damaged_or_faulty very_bad deficient inadequate weak much_to_be_desired bad very_poor worst very_limited insufficient low mediocre poor-quality really_bad very_poorest 
+poor.a :: much_better best_possible 
+stiff.a :: rigid stiffness almost_frozen 
+stiff.a :: stringent tough harsh strict severe strongly_worded fierce strong steep 
+blow.n :: shock setback 
+blow.n :: blowing 
+manage.v :: be_dealt_with got_it_under_control handle handled to_handle been_handled be_handled be_addressed address be_tackled handle_it has_been_handled being_managed brought_under_control 
+manage.v :: been_made managed got_here be_done 've_got_this successfully_completed be_fixed be_achieved deals_with been_achieved been_able pulled_it_off have_succeeded 
+manage.v :: manages being_managed are_managed ran maintains be_managed is_managing be_doing working_on_it govern operated be_taken_up be_monitored are_being_managed is_administered will_be_managed be_treated be_controlled be_processed managing is_responsible been_managed be_organized be_discussed are_handled is_managed managed mange 
+manage.v :: dealing_with cope_with dealt deal_with used_to_it handle_this get_better 
+fear.v :: is_frightening panicked 'm_really_scared are_afraid was_scared scared running_from is_afraid be_alarmed is_scared frightened be_afraid_of scared_of_him feared afraid 're_afraid_of get_scared was_afraid be_frightened scared_of_you 'm_afraid_it_is be_scared am_scared scared_too scared_of 're_scared 'm_frightened am_afraid be_scared_of 'm_scared 're_frightened scared_of_me 'm_just_scared 're_afraid scared_to_death be_afraid 'm_afraid is_scary be_feared 
+fear.v :: is_awful is_heavy 's_fucked_up is_bad 's_the_worst is_bullshit is_weird is_lame is_terrible 
+fear.v :: concerned_about worried_about worrying_about worry_about fears worried thought are_worried 're_worried worry 
+nasty.a :: disagreeable naughty very_bad pretty_bad very_unpleasant very_nasty bad unpleasant pretty_messed_up very_annoying just_nasty horrible so_bad very_naughty wicked 
+nasty.a :: totally_disgusting disgusting_,_okay pretty_gross really_disgusting too_disgusting disgusting so_disgusting ugly just_nasty very_nasty so_gross dirty disgusting_,_henry 
+decline.v :: be_lowered is_declining is_decreased are_declining be_shortened decrease been_depleted has_decreased reducing 's_going_down is_down was_reduced be_diminished is_diminishing are_reduced have_decreased be_minimized are_shrinking close_lower is_lower have_been_declining be_curtailed have_declined is_dwindling is_shrinking be_reduced diminish are_dwindling are_lower were_decreasing is_being_reduced has_deteriorated are_low drop be_narrowed will_be_reduced is_dropping to_fall dip reduced have_fallen is_lowered are_decreasing end_lower reduce was_decreasing been_falling being_reduced are_diminishing dropped has_been_reduced had_decreased 's_dropping scaled_down declined falling_down is_decreasing will_decrease has_declined been_declining has_gone_down is_slowing been_reduced were_declining is_reduced are_dropping will_diminish been_decreasing was_falling has_diminished lower had_declined was_declining is_falling has_been_declining be_decreased 
+decline.v :: are_deteriorating is_deteriorating was_deteriorating 
+decline.v :: has_declined be_denied are_refused is_rejected may_be_refused 
+often.r :: quite_often often_enough typically most_often very_often quite_frequently very_frequently all_too_often most_usually too_frequently frequently too_often so_frequently most_frequently more_frequently 
+often.r :: regularly repeatedly usually generally typically normally commonly 
+often.r :: infrequently sometimes 
+closely.r :: strongly largely deeply intensively extensively thoroughly effectively widely fully 
+closely.r :: strictly intently seriously rigorously 
+closely.r :: very_carefully precisely carefully scrupulously exactly attentively very_attentively 
+closely.r :: intimately inextricably tightly intricately 
+closely.r :: closer extremely_closely closely_together very_closely particularly_closely close most_closely up_close very_close 
+closely.r :: narrowly nearly 
+strike.v :: be_placed is_established are_occurring is_located be_located be_established 
+strike.v :: hits shelled lashes attacked were_beaten be_struck are_striking attacks fires slams strikes being_attacked was_hit bombards fired 
+strike.v :: to_be_achieved be_made be_achieved are_reached be_attained is_reached can_be_achieved 
+strike.v :: being_sought 
+soft.a :: gentle mild so_gentle smooth too_soft 
+soft.a :: software 
+soft.a :: sweet_,_sweet sweeter sweet 
+soft.a :: softwood 
+vital.a :: key incredibly_important badly_needed very_important most_crucial critically_important particularly_crucial quite_crucial quite_vital substantial very_fundamental absolutely_crucial most_vital all-important fundamentally_important very_critical extremely_important crucial highly_important most_important as_fundamental absolutely_key pivotal decisive particularly_important very_significant very_vital paramount most_fundamental instrumental important therefore_critical significant so_important therefore_crucial crucially_important first_and_overriding central quite_fundamental fundamental vitally_important pretty_crucial absolutely_fundamental absolutely_vital really_important extraordinarily_important 
+vital.a :: life-saving critical 
+vital.a :: very_essential absolutely_imperative absolutely_necessary urgently_necessary as_essential very_necessary vitally_needed therefore_vital so_essential essential_to much_needed most_critical thus_essential most_essential most_needed necessary urgently_needed therefore_essential indispensable absolutely_critical critical imperative very_crucial critically_needed absolutely_indispensable quite_essential essential absolutely_essential 
+straight.a :: frankly_speaking direct straightforward 
+straight.a :: all_right all_settled right 
+straight.a :: consecutive 
+straight.a :: upright 
+straight.a :: straight-line 
+forget.v :: forgive 
+forget.v :: ignored skipped been_overlooked omitted overlooked be_overlooked neglected disregarded overlooks left_behind missed_it lost overlook ignore misses lost_it be_neglected omits left 
+forget.v :: bothered 
+forget.v :: disregards ruled_out 
+forget.v :: spaced 've_forgotten forgotten_something forgotten_about forgotten_that forget_about_him lose_sight_of ignores forgot are_forgetting be_forgotten 'd_forgotten forget_him are_forgotten missed had_forgotten forgotten_it been_forgotten forget_things forget_something forgetting forget_everything forgets forgotten_either 
+forget.v :: messed fails failed 
+forget.v :: 've_had_it 
+entirely.r :: fundamentally thoroughly abundantly totally_and_utterly fully_and_completely wholly wholeheartedly utterly fully totally so_totally so_completely fully_and_entirely really fully completely altogether totally quite completely_and_totally thoroughly 
+entirely.r :: at_all 
+entirely.r :: absolutely strictly exactly exclusively purely only definitely perfectly solely 
+entirely.r :: certainly most_definitely very_definitely definitely absolutely most_certainly 
+shot.n :: shoot gunshot shootings shots shooting 
+shot.n :: shooter 
+apparently.r :: patently quite_clearly clearly visibly quite_obviously obviously turns_out demonstrably manifestly evidently very_obviously 
+apparently.r :: supposedly allegedly reportedly ostensibly presumably seemingly superficially purportedly probably most_probably 
+strong.a :: vigorous fast_flowing powerful intense energetic 
+strong.a :: sharp very_marked stark 
+strong.a :: rigorous robust powerful 
+strong.a :: firm strict severe stringent serious forceful legally_binding 
+strong.a :: strongly tough stronger really_strong pretty_solid strongest very_strong very_powerful pretty_strong stepped_up strong_enough much_stronger highest big_and_strong extremely_strong even_stronger strongest_possible quite_strong 
+strong.a :: firmly_based strongly_worded compelling well_developed convincing well_established 
+strong.a :: high great significant considerable 
+strong.a :: steadfast strongly_held solid resolute more_united staunch firmly_held firmly_established 
+strong.a :: firmly_based substantial firmly_based sturdy 
+strong.a :: potent powerful 
+forward.r :: further_on forwards any_longer any_further even_further still_further much_further further_forward forth further_than_that a_step_forward 
+forward.r :: forward_here 
+forward.r :: all_ahead ahead 
+forward.r :: eagerly 
+lie.v :: reside was_based found_themselves may_be_found is_built can_be_found are_available are_resident are_in is_stored is_there was_located are_present be_found is_based is_located were_n't_there have_been is_held is_placed find_themselves is_resident be_based are_we were_located is_false finds_itself lay is_to_be_found are_situated are_based were_based are_living are_there is_found is_present be_located are_found are_located was_found 
+lie.v :: is_n't were_n't was_n't are_n't 
+lie.v :: did_it were_n't lied were_lying is_untrue tell_a_lie lying_to_you are_lying is_not_the_case lied_to_you is_n't_true 'm_not_lying lied_to_me 're_making_that_up 's_a_lie made_a_mistake was_lying 'm_lying was_bluffing 's_lying lying_to_me is_not_true tell_lies is_incorrect 're_lying was_wrong tell_stories calling_me_a_liar lied_to 're_lying_to_me is_lying be_lying 
+lie.v :: are_born were_born 
+lie.v :: are_going are_heading is_going 
+saint.n :: st. sainte santa 
+close.r :: closer close_enough almost more_closely very_closely any_closer even_closer just_close near nearly closely very_close nearby 
+close.r :: miles_away 
+close.r :: closure closes closing no_longer 
+pass.v :: going_on_up_there going_on_in_here been_passed 's_happening is_passed happening_there be_made be_passed be_doing been_going_on 're_making 's_going_on 'm_going_to_go happening_here going_to_happen is_happening is_passing been_able happening_out_there 'm_doing going_on_here been_happening going_on_over_there going_on_around_here 
+pass.v :: 're_coming been_going 's_going 's_coming is_coming 's_coming_through passing_through is_going are_going passes_through is_going_through passing_by 
+pass.v :: is_taken been_approved been_adopted was_adopted were_adopted been_accepted was_agreed_to have_been_adopted was_approved is_received received_from should_be_adopted will_be_adopted to_be_adopted is_enacted approve was_received being_adopted be_adopted adopted are_adopted is_adopted is_accepted will_be_accepted were_to_be_adopted 
+pass.v :: be_killed killed_off 
+pass.v :: be_missed 
+test.n :: tests testing assess tested experiment experiment examination check probes 
+test.n :: criterion data criteria 
+test.n :: trial tests 
+skip.v :: went walked 
+skip.v :: was_avoided should_be_avoided be_avoided are_prevented be_prevented be_averted are_avoided can_be_avoided is_avoided 
+skip.v :: jump leapfrog jumping 
+skip.v :: ignore skipped bypass passed omit 
+skip.v :: relayed 
+skip.v :: shifted moved transferred 
+worldwide.a :: world_wide globally world-wide international universal global 
+worldwide.a :: world-class 
+near.r :: close around nearby 
+near.r :: almost nearly approximately 
+thus.r :: hence accordingly so_therefore as_such 
+thus.r :: then so_then so so_that that_being_so 
+thus.r :: thereby 
+so.r :: now_then well_then then so_then 
+so.r :: yes 
+so.r :: accordingly so_therefore therefore thereby hence consequently thus 
+so.r :: so- so. 
+so.r :: so_too as_well too 
+so.r :: very 
+so.r :: even 
+true.a :: equally_true absolutely_right about_right exactly_right really_true even_true absolutely_true quite_right quite_correct very_true well_known perfectly_true true_enough only_right correct quite_true 
+true.a :: untrue less_true 
+true.a :: real very_real veritable really_real genuine authentic accurate right truth proper actual -true fully_fledged 
+true.a :: truthful 
+strange.a :: weird_about_it pretty_strange weird_about_them kinda_weird a_little_weird too_weird just_strange alien just_weird bizarre unusual a_little_odd very_weird very_strange a_bit_weird very_,_very_strange pretty_weird strange-looking totally_weird a_little_strange quite_strange rather_strange not_known so_weird just_so_strange really_strange rather_odd very_odd that_weird peculiar kind_of_weird awkward somewhat_strange just_odd a_bit_strange weird really_weird 
+strange.a :: less_known 
+strange.a :: really_twisted 
+strange.a :: surprising remarkable very_exciting all_that_shocking astonishing extraordinary that_amazing quite_astonishing rather_paradoxical 
+strange.a :: mysterious a_little_confusing rather_curious odd curious 
+strange.a :: funny funny_,_guys pretty_funny 
+wind.n :: winds downwind 
+wind.n :: windmill 
+quick.a :: very_fast very_quick rapid faster fast-track over_faster fast quickly pretty_quick fastest real_quick swift very_rapid 
+quick.a :: timely prompt expeditious speedy quickly 
+quick.a :: hurry_up 
+quick.a :: fast_growing rapidly_growing rapidly_expanding 
+clear.v :: clarifying is_obvious clearly_defined is_quite_clear is_included 's_clear clarify is_understood is_very_clear is_evident 
+clear.v :: is_open was_free is_free are_free 
+clear.v :: is_in_agreement got_it got_that 
+clear.v :: get_lost 
+clear.v :: clean_up be_cleaned cleaned_up erase clean cleared_away is_cleared cleaning_up 
+show.v :: was_submitted was_issued are_submitted were_submitted has_been_issued have_seen were_coming been_issued is_submitted been_submitted is_issued were_issued 
+show.v :: illustrate is_presented showcase is_displayed are_displayed been_presented be_displayed 
+show.v :: be_shown shown showing had_shown are_shown will_be_shown have_shown shows_that is_shown 
+show.v :: be_noted has_indicated 
+show.v :: details 
+show.v :: are_listed be_posted 
+show.v :: has_demonstrated been_proven prove demonstrates found_that be_proven been_demonstrated demonstrating has_proven be_demonstrated made_it_clear be_proved 
+only.r :: only_just just as_recently barely just_about merely 
+only.r :: no_longer any_longer not_exceeding 
+only.r :: purely exclusively alone entirely solely simply solely_and_exclusively 
+rhythm.n :: pace tempo 
+hold.v :: is_carried_out was_under_way been_carried_out to_be_carried_out was_undertaken is_being_conducted was_underway organizing is_performed is_going_on coming_up been_undertaken be_done is_taking_place keep_doing_this is_ongoing be_doing_something get_organized conduct be_carried_out is_being_carried_out is_conducted holding been_organised be_undertaken holds holds were_carried_out are_carried_out be_conducted is_organized be_implemented are_under_way is_underway conducted will_be_organized held is_undertaken 
+hold.v :: being_held is_maintained holds held should_be_maintained held is_maintaining is_stored are_kept be_used are_maintained be_stored holding possess 
+hold.v :: be_waiting 'm_waiting being_held keep_you_waiting holds held 're_holding holding please_hold 
+hold.v :: be_learned 
+hold.v :: be_addressed are_dealing_with 
+cap.n :: ceiling caps capping 
+cap.n :: caps 
+stand.n :: standing stands centers 
+stand.n :: standpoint position stance 
+stand.n :: points coordinates 
+can.n :: expresses stands 
+can.n :: -can 
+shortly.r :: briefly very_quickly soon promptly quite_soon real_soon immediately soon_enough fairly_soon short very_briefly very_soon quickly pretty_soon very_shortly so_soon before_long 
+shortly.r :: shortly_afterwards later shortly_thereafter soon_afterwards moments_later later_on soon_after shortly_after 
+shortly.r :: one_step_further a_step_further a_bit_further 
+shortly.r :: earlier_today recently very_recently 
+good.a :: just_good very_best -good best_possible really_good very_dashing all_well_and_good well_and_good very_good the_best excellent quite_good real_good best so_very_good 
+good.a :: well_acquainted 
+good.a :: positive 
+good.a :: well_chosen well_received well_functioning well_managed well_established 
+good.a :: better_than better_than_that better_off any_better better_and_better better better_now something_better even_better much_better 
+good.a :: proper sound satisfactory right 
+good.a :: pretty_good fine all_right 
+good.a :: so_pleased more_excited very_pleased 
+good.a :: well_advanced 
+good.a :: sounds_great all_right fine very_good 
+good.a :: nicely_done well_done nice 
+execution.n :: executions executing exÃ©cution 'exÃ©cution 
+execution.n :: implementation performance delivery realization 
+execution.n :: enforcement 
+civil.a :: civilian civilians public 
+civil.a :: civilized civilised 
+civil.a :: public civic 
+tap.v :: exploit be_exploited 
+tap.v :: be_explored be_pursued be_supported be_tapped be_developed 
+tap.v :: piped be_tapped 
+grim.a :: severe harsh dire terrible 
+grim.a :: very_depressed somber rather_grim very_grim depressing gloomy dismal bleak extremely_grim sombre 
+grim.a :: dark gruesome macabre sinister 
+around.r :: about almost some roughly approximately near nearly or_so 
+around.r :: in_and_around_here towards around_here over over_there all_over 
+job.n :: task data reports 
+job.n :: jobs working work profession labour workplace position employment 
+job.n :: vacancies post 
+job.n :: abilities qualifications capabilities 
+job.n :: benefits 
+job.n :: officials tradesmen 
+full.a :: totally_booked fully highest_possible completely_full too_crowded so_crowded very_full full_and_complete fuller fullest absolute full- filled_out 
+full.a :: entire total complete fully_comprehensive comprehensive wholehearted thorough comprehensive_enough full-scale full_and_comprehensive full-fledged whole 
+full.a :: fully_effective fully_functioning fully_developed fully_integrated fully-fledged fully_qualified fully-qualified fully_finished fully_committed fully_fledged best_possible 
+full.a :: binding_in_its_entirety 
+full.a :: too_complicated 
+full.a :: detailed properly_documented more_detailed comprehensive 
+rest.n :: rests resting 
+rest.n :: remainder 
+external.a :: externally outer outside exterior 
+external.a :: extraneous foreign 
+mass.n :: masse masses 
+mass.n :: les las 
+mass.n :: mass. 
+phone.n :: cellphone telephone telephones tÃ©lÃ©phone phones 
+phone.n :: phones telephones telephony 
+terrible.a :: pretty_bad pretty_horrible pretty_awful most_horrible formidable miserable really_wrong really_bad dreadful very_bad very_horrible most_awful so_bad real_bad so_awful even_worse most_terrible just_appalling just_terrible worst dire awful too_fucking_bad just_awful really_horrible really_terrible pretty_terrible all_bad the_worst that_bad bad pretty_messed_up so_horrible just_simply_terrible 
+terrible.a :: tremendous that_great so_great really_okay 
+terrible.a :: quite_shocking atrocious horrific most_appalling heinous deplorable disastrous horrendous abominable just_horrible horrid harrowing devastating appalling abhorrent ugly tragic quite_appalling horrible horrifying hideous 
+terrible.a :: so_embarrassed 
+terrible.a :: scary quite_frightening most_terrifying pretty_terrifying frightful terrifying gruesome shocking frightening fearsome ghastly 
+terrible.a :: terrific tremendous 
+terrible.a :: just_tired 
+pulse.n :: heartbeat pulsation pulses 
+pulse.n :: impetus impulse 

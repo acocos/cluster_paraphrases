@@ -1,0 +1,30 @@
+Running Instructions
+
+F-Score
+======
+Usage: > java -jar fscore.jar <System Key> <Gold Standard Key> <POS-tag> 
+
+Examples:
+
+For nouns: > java -jar fscore.jar ./baselines/mfs_all.key ./keys/all.key n
+
+For verbs: > java -jar fscore.jar ./baselines/mfs_all.key ./keys/all.key v 
+
+For all:   > java -jar fscore.jar ./baselines/mfs_all.key ./keys/all.key all
+
+
+
+
+V-Measure
+=========
+Usage: > java -jar vmeasure.jar <System Key> <Gold Standard Key> <POS-tag>
+
+
+Examples:
+
+For nouns: > java -jar vmeasure.jar ./baselines/mfs_all.key ./keys/all.key n
+
+For verbs: > java -jar vmeasure.jar ./baselines/mfs_all.key ./keys/all.key v 
+
+For all:   > java -jar vmeasure.jar ./baselines/mfs_all.key ./keys/all.key all
+

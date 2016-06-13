@@ -1,0 +1,17 @@
+In order to run the cluster.py example included in this download, you will need
+to get the PPDB data for this directory.
+
+If you are on Linux, just run the enclosed script:
+
+./get_ppdb_data.sh
+
+If that doesn't work, manually download the data from:
+
+http://seas.upenn.edu/~acocos/data/paraphrase_clustering_ppdb_data.tar.gz
+
+and unzip the three files to this directory (<PATH>/cluster_paraphrases/data/ppdb_data/).
+The contents will be:
+
+GoogleNews-vectors-negative300.p
+pp_samestems_xxl_Independent.p
+pp_samestems_xxl_PPDB2.0Score.p

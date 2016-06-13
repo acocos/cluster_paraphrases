@@ -1,0 +1,10 @@
+Lemma		FScore		Precision	Recall
+pulse_n		0				0		0
+Clusters Number:5.0
+============================================================================
+Total FScore:0.0
+Lemma		V-Measure		Homogeneity		Completeness
+pulse_n	0.59			1			0.418
+Clusters Number:5.0
+============================================================================
+Total V-Measure:0.59
