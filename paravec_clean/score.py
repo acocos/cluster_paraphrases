@@ -11,6 +11,8 @@ def score_semeval(resultskey, goldkey, output, semeval_root='../eval/semeval_uns
     script provided as part of SEMEVAL2010 scoring script
     :param resultskey: str
     :param goldkey: str
+    :param output: str (output I/O stream)
+    :param semeval_root: str (path to semeval_unsup_eval directory)
     :return:
     """
     ## Score F-Score
@@ -34,7 +36,7 @@ def write_key(keyfile, tgt, sol, mode='w'):
 def read_scoring_soln(tempfile, tgt):
     '''
     Return scores for target written in tempfile
-    :param tempfile:
+    :param tempfile: str
     :param tgt:
     :return: fscore, prec, rec, vmeas, hom, comp (all float)
     '''
@@ -96,9 +98,14 @@ def get_labels(gold, sol):
 def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/keys', use_sklearn_vmeas=False):
     '''
     Score clustering solution sol against gold classes.
+    Both the sol and gold are passed as dictionaries with integer keys (value
+    is unimportant) and sets of paraphrases in each cluster as values.
     Returns (fscore, precision, recall, vmeasure, homogeneity, completeness)
+    :param tgt: str (target word you're clustering)
     :param sol: dict {int -> set}
     :param gold: dict {int -> set}
+    :param tempdir: stra (temporary directory to store scoring key files)
+    :param use_sklearn_vmeas: boolean (setting true will use SKLearn version of V-Measure instead of semeval script)
     :return: FScore, precision, recall, V-Measure, homogeneity, completeness (all floats)
     '''
     ## Write temporary key files
