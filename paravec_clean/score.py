@@ -95,7 +95,7 @@ def get_labels(gold, sol):
     return goldlab, sollab, words
 
 
-def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/keys', use_sklearn_vmeas=False):
+def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/keys', use_sklearn_vmeas=False, semeval_root='eval/semeval_unsup_eval'):
     '''
     Score clustering solution sol against gold classes.
     Both the sol and gold are passed as dictionaries with integer keys (value
@@ -106,8 +106,12 @@ def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/k
     :param gold: dict {int -> set}
     :param tempdir: stra (temporary directory to store scoring key files)
     :param use_sklearn_vmeas: boolean (setting true will use SKLearn version of V-Measure instead of semeval script)
+    :param semeval_root: str (path to semeval root directory)
     :return: FScore, precision, recall, V-Measure, homogeneity, completeness (all floats)
     '''
+    ## Verify set of paraphrases in gold and sol are the same
+    assert set.union(*sol.values()) == set.union(*gold.values())
+
     ## Write temporary key files
     tempsolkey = os.path.join(tempdir, 'sol_temp.key')
     tempgoldkey = os.path.join(tempdir, 'gld_temp.key')
@@ -117,7 +121,7 @@ def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/k
     ## Call scoring script
     tempscorefile = os.path.join(tempdir, 'scorestemp')
     tempscores = open(tempscorefile, 'w')
-    score_semeval(tempsolkey, tempgoldkey, tempscores)
+    score_semeval(tempsolkey, tempgoldkey, tempscores, semeval_root=semeval_root)
     tempscores.close()
     fscore, prec, rec, vmeas, hom, comp = read_scoring_soln(tempscorefile, tgt)
 
