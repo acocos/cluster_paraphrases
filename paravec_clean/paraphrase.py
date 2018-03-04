@@ -209,10 +209,18 @@ class ParaphraseSet:
             sims = preprocessing.normalize(np.matrix(sims), norm='l2')
 
             ## Step 4: Run HGFC Clustering
+            maxsc = =1.
+            iter = 0
+            scores = None
+            while maxsc <= 0.:
             try:
                 clusterings, scores = hgfc.h_cluster(wordlist, sims, sils)
-            except:
-                clusterings, scores = hgfc.h_cluster(wordlist, sims, sils)
+                maxsc = max(scores)
+                iter += 1
+                if iter >= 10:
+                    break
+            except KeyError:
+                continue
 
             labeldict = clusterings[np.argmax(scores)]
 
