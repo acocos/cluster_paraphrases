@@ -16,8 +16,8 @@ def gfact(W, m):
     :return: adjacency matrix B (n x m), vector L (length m)
     '''
     n = W.shape[0]
-    H = np.random.rand(n,m)
-    H = H / H.sum(axis=0)[np.newaxis,:]  # normalize cols = 1
+    H = np.random.rand(n,m) + 1.
+    # H = H / H.sum(axis=0)[np.newaxis,:]  # normalize cols = 1
     L = np.diag(H.sum(axis=0))
 
     for i in range(50):
