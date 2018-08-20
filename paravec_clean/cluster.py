@@ -110,7 +110,9 @@ if __name__ == "__main__":
         try:
             ## Baseline: SEM-CLUST
             if opts.method=='semclust':
-                ppset.sem_clust(w2p)
+                wlst, x = ppset.vec_matrix()
+                distrib_sims = dict(zip(wlst, x))
+                ppset.sem_clust(w2p, distrib_sims)
 
             ## Method 1: Spectral clustering w/ Local Scaling
             if opts.method=='spectral':
