@@ -36,11 +36,9 @@ def chunk(seq, num):
   avg = len(seq) / float(num)
   out = []
   last = 0.0
-
   while last < len(seq):
     out.append(seq[int(last):int(last + avg)])
     last += avg
-
   return out
 
 if __name__ == "__main__":
@@ -52,6 +50,7 @@ if __name__ == "__main__":
     optparser.add_option("-b", "--baselines", action="store_true", default=False, help="Run baseline tests")
     optparser.add_option("-f", "--filter", action="store_true", default=False, help="Filter paraphrase sets by gold before clustering")
     optparser.add_option("-m", "--method", dest="method", default="hgfc", help="Clustering method ('spectral', 'semclust', or 'hgfc')")
+    optparser.add_option("-r", "--randseed", dest="rand_seed", default=None, help="Random seed to make clustering results consistent (integer)")
     (opts, _) = optparser.parse_args()
 
     if opts.ppfile is None:
@@ -64,6 +63,9 @@ if __name__ == "__main__":
         exit(0)
 
     entail = True
+    
+    if opts.rand_seed is not None:
+        opts.rand_seed = int(opts.rand_seed)
 
     #################################
     # Cluster target words
@@ -113,15 +115,15 @@ if __name__ == "__main__":
                 wlst, x = ppset.vec_matrix()
                 distrib_sims = dict(zip(wlst, x))
                 ppset.sem_clust(w2p, distrib_sims)
-
+            
             ## Method 1: Spectral clustering w/ Local Scaling
             if opts.method=='spectral':
-                ppset.zmp_cluster(w2p, w2e)
-
+                ppset.zmp_cluster(w2p, w2e, rand_seed=opts.rand_seed)
+            
             ## Method 2: HGFC
             if opts.method=='hgfc':
-                ppset.hgfc_cluster(w2p, w2e)
-
+                ppset.hgfc_cluster(w2p, w2e, rand_seed=opts.rand_seed)
+            
             results_json['.'.join([wt.word,wt.type])] = ppset.sense_clustering
         except:
             print 'ERROR:', wt, ppset
@@ -148,28 +150,31 @@ if __name__ == "__main__":
                 tgtname = '_'.join([wt.word, wt.type])
                 sol = ppset.sense_clustering
                 tgtset = set([item for sublist in sol.values() for item in sublist])
-
+                
                 gld = gold[wt].sense_clustering
                 goldset = set([item for sublist in gld.values() for item in sublist])
-
+                
                 gldfilt = defaultdict(set,{n: l & tgtset for n,l in gld.iteritems() if len(l & tgtset) > 0}) # remove empties
                 gldfiltnodup = defaultdict(set)  # remove duplicate classes
                 for k,s in gldfilt.items():
                     if frozenset(s) not in gldfiltnodup.items():
                         gldfiltnodup[k] = frozenset(s)
-
+                
                 solfilt = defaultdict(set,{n: l & goldset for n,l in sol.iteritems() if len(l & goldset) > 0}) # remove empties
                 solfiltnodup = defaultdict(set)  # remove duplicate classes
                 for k,s in solfilt.items():
                     if frozenset(s) not in solfiltnodup.items():
                         solfiltnodup[k] = frozenset(s)
-
+                
+                solfiltnodup = {k:set(v) for k,v in solfiltnodup.items()}
+                gldfiltnodup = {k:set(v) for k,v in gldfiltnodup.items()}
+                
                 fscore, prec, rec, vmeas, hom, comp = \
                     score.score_clustering_solution(tgtname,
-                                                    solfilt,
-                                                    gldfilt,
+                                                    solfiltnodup,
+                                                    gldfiltnodup,
                                                     tempdir='../eval/semeval_unsup_eval/keys')
-
+                
                 if opts.baselines:
                     ## Most Frequent Sense (MFS) Baseline
                     mfs = {1: tgtset}
@@ -187,6 +192,7 @@ if __name__ == "__main__":
                     for i in range(RAND_ITER):
                         random.shuffle(tgtlist)
                         randsol = dict(enumerate(chunk(tgtlist, RAND_ITER)))
+                        randsol = {k: set(v) for k,v in randsol.items()}
                         rand_f, _, _, rand_v, _, _ = \
                             score.score_clustering_solution(tgtname, randsol, gldfilt, tempdir='../eval/semeval_unsup_eval/keys')
                         rand_vmeas.append(rand_v)
@@ -195,8 +201,8 @@ if __name__ == "__main__":
                     print rand_fscores
                     baseline_rand_fscore = np.mean(rand_fscores)
                     baseline_rand_vmeas = np.mean(rand_vmeas)
-
-                gldsize = len([n for n,l in gld.iteritems() if len(l&tgtset) > 0])
+                
+                gldsize = len(gldfiltnodup)
                 scores[wt] = dict(zip(headers, [wt.word, wt.type, fscore, prec, rec, vmeas, hom, comp, gldsize, gldfilt, solfilt, baseline_rand_vmeas, baseline_rand_fscore, baseline_mfs_vmeas, baseline_mfs_fscore, baseline_1c1par_vmeas, baseline_1c1par_fscore]))
                 print 'Scores for', \
                     tgtname+':', \
@@ -207,7 +213,6 @@ if __name__ == "__main__":
         print 'Words with scoring errors:', errors
         with open(opts.outfile, 'w') as fout:
             writ = csv.DictWriter(fout, fieldnames=headers)
-
             writ.writeheader()
             for sc in scores.values():
                 writ.writerow(sc)

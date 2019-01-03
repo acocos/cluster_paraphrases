@@ -19,7 +19,6 @@ call.v :: defer consider address telephone hail see arouse holler expect table r
 board.n :: directorate sheet surfboard scoreboard skateboard surface display commission snowboard dashboard committee table panel plank card board 
 inner.a :: interior inside internal inner intimate 
 blow.n :: tap knockout setback whiplash rap shot cocaine hammer whip belt impact poke concussion jolt bump pounding strike whack kick blow coke punch whammy bang stab slap reversal thrust blast slug knock reverse gust shock smack stroke expiration swing lash wind 
-outdoor.a :: outside outdoor 
 instead.r :: rather alternatively instead 
 now.r :: straightaway at_present forthwith at_once directly immediately right_away now nowadays today instantly 
 order.v :: organize inflict sequence enjoin direct rank call_for instruct determine dictate regulate commission call command govern tell prescribe warn decide mandate put arrange require impose request say range organise place order 
@@ -27,7 +26,6 @@ neat.a :: groovy dandy great clean tasteful swell orderly neat peachy nifty stra
 closely.r :: intimately close nearly closely tight 
 dismiss.v :: dismiss fire retire terminate displace sack flout ignore discount remove reject disregard drop dissolve alter 
 take.v :: consider show move obtain cross bring go follow bail find pack fix charge choose practise relieve return get read propose practice bear necessitate transmit know decide wash retake drop borrow remove try collect contain become grab steal shed set deal direct touch see cost usher convey extract transport aim dial lead cast eliminate conduct exercise drink elect honour look_at free stem contemplate rent ask throw change engage receive study ingest fetch turn admit swear place pick swallow undergo assign feed love consume point win subscribe submit determine discharge vote apply select use prepare attach take_away carry occupy interpret strike cancel define sort confiscate head buy acquire assert contract train incur usurp demand catch hold harvest eat specify shoot pull hire target affirm recall require work act employ record limit empty learn take_off guide delete claim play taste fuck accept involve experience get_out hit fill deprive verify compel feature take test draw clean utilise track welcome dismantle hand utilize purchase land seize assume clear adopt cover drive honor lift withdraw enter position 
-loud.a :: loud 
 clear.a :: clear-cut clear readable well-defined clean light open 
 entirely.r :: all solely only exclusively wholly completely altogether alone entirely totally 
 cross.a :: transversal cross transverse 
@@ -51,7 +49,6 @@ cry.v :: sob call_out tear require cry shout call holler yell weep scream howl
 full.a :: entire good wide broad full total replete 
 letter.n :: shin text character l s h letter invitation alpha document e 
 manage.v :: control organize deal process win move mind direct administer carry_on attain manipulate contend fend cut grapple dispose_of build conduct command juggle achieve do manage handle cope reach cope_with supervise care oversee work get_by succeed organise accomplish act coordinate administrate meet 
-bar.v :: obstruct prohibit bar forbid debar proscribe stop exclude disallow interdict barricade close impede block 
 rest.n :: interruption rest sleeping remnant sleep residue dormancy pause ease breath suspension residual leisure break part repose relaxation remainder breather portion relief balance respite 
 hard.r :: heavily severely hard firmly 
 way.n :: bearing selection trend share course fashion headway manner touch waterway tendency category style fit implementation agency passage access instrument way percentage approach status direction form means tool choice journey path response condition distance lane voice lifestyle room route aim portion part mode itinerary position property salvation heading road 
@@ -87,7 +84,7 @@ endure.v :: withstand accept weather run suffer prevail pay go_through brook abi
 special.a :: especial extra exceptional particular peculiar special 
 decline.v :: slip wane repudiate deprive decrease degenerate fail suffer come_down decline worsen tumble descend reject deteriorate slump sink fall diminish refuse drop lessen turn go_down lose regress dip 
 tremendous.a :: terrific enormous marvellous fantastic terrible frightful marvelous wonderful wondrous grand awful tremendous 
-worldwide.a :: worldwide planetary universal global general world-wide 
+worldwide.a :: worldwide planetary universal global general 
 skip.v :: jump omit spring rebound overlook bounce throw leave leap cut hop skip drop miss neglect 
 rather.r :: preferably sort_of rather sooner quite kinda instead kind_of 
 think.v :: consider conclude feel recognize focus see design expect esteem envisage recollect guess believe pay review give suspect evaluate rethink brainstorm speculate intend mull centre reckon propose regard ponder reflect contemplate reason meditate plan recognise imagine judge hold change remember center recall anticipate associate think concentrate suppose view study mean conceive know 
@@ -113,9 +110,6 @@ job.n :: duty chore office profession trade vocation employment post occupation 
 come.v :: do move rank see exist result arise go follow happen total occur take_place hit derive develop proceed lead make amount descend pass go_on be run extend get rise reach change move_in hail fall get_in get_along come grow emanate go_through land go_up approach originate experience turn near settle become arrive travel address attain 
 close.n :: finish end ending close closing conclusion 
 rhythm.n :: beat periodicity rhythm cycle 
-wild.n :: wild wilderness 
-drop.v :: shed plummet forget dump tumble skip lay_off terminate remove jump give_up cease stop have unload miss come_down blow quit cut droop overlook take fade cut_down dismiss save fall_off deteriorate plunge decline hang sag lose slump bear fell deliver sink fall put discharge throw discontinue expend waste wane move descend omit pour neglect cast go_down place withdraw swing deplete drop spend 
-treat.n :: delicacy treat 
 stiff.a :: firm steadfast stiff potent tight rigid strong 
 yet.r :: even so_far up_to_now nonetheless nevertheless heretofore however all_the_same hitherto thus_far even_so notwithstanding still yet 
 fear.v :: fear panic dread worry regret 
@@ -135,15 +129,12 @@ ring.n :: sound annulus ringing chain hoop band ring rim gang strip mob doughnut
 tight.r :: close closely fast tight 
 acquire.v :: locate retrieve win obtain accept garner recoup have recover extract find capture develop collect profit make realize take regain evolve pick_up buy get absorb come_by earn produce gain catch grow purchase hire engage come_up assimilate acquire study adopt borrow turn benefit assume realise learn receive reclaim 
 range.n :: purview set chain facility stove spectrum ambit gamut variety pallet latitude scope contrast mixture reach palette sweep band formation extent tract assortment expanse installation ballpark capability range limit horizon grasp view 
-pass.v :: get_through move trespass surpass go take_place cut acknowledge crack enact do move_on return get_across break fall judge elapse die intervene yield leave release exceed deal go_by nail get_by convey pass happen concur lead make_it exit eliminate progress succumb be run extend communicate deliver negotiate countenance expire let sink licence come throw change come_around advance overtake ace come_up declare turn succeed permit commit approve authorize render win transit traverse sanction carry radiate message trust entrust proceed transfer certify strike empty relay serve evacuate drown turn_out infiltrate fly thread lapse work cast come_through guide result transcend give give_up slip arise vanish occur disappear legislate develop make authorise excel cross overstep transmit go_over go_on draw okay track reach sneak hand go_away discharge validate cycle relinquish devolve clear cover spend allow operate go_through travel 
 thus.r :: hence thus thusly so therefore 
 jam.n :: preserve crowd mess jamming fix crush jam hole pickle 
 can.n :: toilet bathroom container room pot potty tin can john crapper 
 carry.v :: distribute contain retransmit deal win move obtain involve bring imply persuade enclose expect convey measure go follow shift transport take capture promote raise disseminate perform transfer support feature carry diffuse spread encourage maintain run behave impart transmit sustain include pass channel circulate do express hit continue extend advance farm deliver conduct communicate effect bear displace assert haul produce propagate retain post hold grow fly broadcast execute seize pose boost work keep return range stockpile porter have act further shoulder nurture stock travel pack 
 strange.a :: unknown unusual strange foreign 
-quick.a :: straightaway prompt spry agile immediate nimble speedy fast ready quick 
 nearly.r :: about nigh almost intimately most near virtually closely well-nigh nearly 
-stand.n :: defense booth table pedestal defence angle viewpoint support platform halt stance stop tripod newsstand base grandstand standpoint posture stall place stand position rack 
 about.r :: about around almost roughly approximately just_about near virtually more_or_less nearly 
 shortly.r :: briefly short shortly presently soon concisely before_long 
 steady.a :: firm unwavering steadfast steady unshakable regular 
@@ -153,12 +144,10 @@ pot.n :: toilet pot marijuana cauldron sight vessel container planter cannabis k
 paper.n :: essay chad press paper wallpaper sheet production pad newsprint gazette product medium material report article cardboard card tissue daily linen stuff newspaper 
 serious.a :: good grievous life-threatening dangerous severe sober serious grave 
 render.v :: represent render supply articulate pass return illustrate depict give provide create show submit get translate do repeat run extend offer afford reach deliver hand turn_in produce provision generate present execute communicate equip dedicate yield try perform make furnish 
-execution.n :: lynching enforcement murder liquidation process assassination elimination executing beheading hanging action performance execution implementation 
 truly.r :: rightfully sincerely truly really genuinely 
-mass.n :: plenty deal people biomass flock mountain group masses flood pile lot raft multitude body mess volume heap bulk batch audience magnitude mass accumulation 
+mass.n :: plenty deal people biomass flock mountain group flood pile lot raft multitude body mess volume heap bulk batch audience magnitude mass accumulation 
 post.n :: office communication incumbency chair post airmail occupation stake station mail lookout business spot standard delivery job situation line outpost fort berth presidency premiership chairmanship place position mailing 
 let.v :: authorize give consent accept rent have pass trust make authorise include cause lease get bear let clear tolerate leave admit stand allow permit leave_behind support 
-dry.a :: dry 
 softly.r :: quietly softly gently lightly 
 pull.v :: move rip drive bring get_out strip attract stretch extract make take_away wound bust arrest take retract draw hit get act pluck haul catch abduct tug pull tear gather drag remove pull_back withdraw pick commit yank 
 raw.a :: natural rude raw naked sensitive crude 
@@ -188,7 +177,6 @@ strain.n :: exertion tension stress endeavour pedigree form variety nervousness 
 see.v :: consider identify suffer find envisage glimpse believe comprehend include read watch perceive know realize encounter like conceive realise ascertain view enjoy envision discover see expect witness detect call_in favour notice inspect scrutinise imagine come interpret care search receive experience assure tour ensure undergo think feel date determine respect visit live call preview accompany invite regard observe understand minister catch hold look value project learn meet bet control figure scan cover examine deem check verify make cross take test behold picture play reconsider attend reckon visualize come_across find_out appreciate hear 
 stand.v :: withstand set rest resist measure suffer fend pay defend brook abide fight oppose stand be stomach pose serve bear stay countenance let accept hold_out put stand_firm tolerate fight_back remain continue place endure allow permit position support lay 
 hold.v :: carry_on consider withstand obtain sleep touch hold uphold acknowledge arrest restrain underpin include halt evaluate stop bear conquer judge arrange restrict resolve yield continue trap contain enclose stock view prevent house hold_tight direct maintain resist carry see concern concur defend hold_back behave sustain conduct postpone refer preserve be entertain throw protect experience keep admit retain think block conclude feel relate harbour accommodate guard weather cancel apply proceed support exert wield call declare suppress regard assert catch stand_firm believe obligate save affirm aim limit endure grasp curb balance agree control defer give lock deem exist have request prevail conserve capture grant make check book take confine go_on settle oblige drink bind cover stockpile command reserve 
-informal.a :: informal loose 
 test.n :: assay audition run exam midterm endeavour quiz try trial experiment examination tryout test attempt effort experimentation 
 scrap.n :: junk piece tussle fragment brawl chip rubble scuffle fight litter debris brush rubbish scrap bit waste detritus trash 
 finally.r :: eventually ultimately last at_last at_long_last finally in_conclusion lastly 
@@ -205,9 +193,7 @@ external.a :: international outside external extraneous
 good.a :: beneficial right secure just respectable good dear salutary ripe expert proficient dependable honorable full safe adept sound effective well honest near skilful serious 
 rough.a :: jumpy rocky bumpy approximate crude fierce rough harsh 
 civil.a :: civil polite civic 
-wind.v :: go wind 
 remainder.n :: residue residuum balance end remnant residual rest portion part leftover difference remainder 
-gall.n :: gall bile 
 around.r :: about around some roughly approximately just_about or_so more_or_less round 
 pulse.n :: pulsing beat pulse wave legume rate impulse heartbeat pulsation 
 right.r :: justly mighty properly right correctly 

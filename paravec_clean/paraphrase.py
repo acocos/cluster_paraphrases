@@ -60,7 +60,7 @@ class ParaphraseSet:
         self.cluster_count = 0
         self.own_vector = []
 
-    def zmp_cluster(self, w2p, entail_scores=None):
+    def zmp_cluster(self, w2p, entail_scores=None, rand_seed=None):
         '''
         Perform unsupervised spectral clustering with local scaling
 
@@ -75,6 +75,10 @@ class ParaphraseSet:
         '''
         self.reset_sense_clustering()
         wordlist = sorted(self.pp_dict.keys())
+        try:
+            wordlist.remove(ppset.target_word)
+        except:
+            pass
         oov = [w for w in wordlist if w not in w2p]
         if len(oov) > 0:
             sys.stderr.write('WARNING: Paraphrases %s are OOV. Removing from ppset.\n' % str(oov))
@@ -142,7 +146,7 @@ class ParaphraseSet:
                 clusterings = []
                 scores = []
                 for k in group_num:
-                    sc = SpectralClustering(n_clusters=k, affinity='precomputed')
+                    sc = SpectralClustering(n_clusters=k, affinity='precomputed', random_state=rand_seed)
                     sc.fit(L)
                     labels = sc.fit_predict(L)
                     ld = {l: [pp for (ll,pp) in zip(labels, consol_wordlist) if ll==l]
@@ -161,7 +165,7 @@ class ParaphraseSet:
                 self.add_sense_cluster(lst)
 
 
-    def hgfc_cluster(self, w2p, entail_scores=None):
+    def hgfc_cluster(self, w2p, entail_scores=None, rand_seed=None):
         '''
         Perform Hierarchical Graph Factorization Clustering (HGFC):
 
@@ -175,6 +179,10 @@ class ParaphraseSet:
         '''
         self.reset_sense_clustering()
         wordlist = sorted(self.pp_dict.keys())
+        try:
+            wordlist.remove(ppset.target_word)
+        except:
+            pass
         oov = [w for w in wordlist if w not in w2p]
         if len(oov) > 0:
             sys.stderr.write('WARNING: Paraphrases %s are OOV. Removing from ppset.\n' % str(oov))
@@ -214,12 +222,13 @@ class ParaphraseSet:
             scores = None
             while maxsc <= 0.:
                 try:
-                    clusterings, scores = hgfc.h_cluster(wordlist, sims, sils)
-                    maxsc = max(scores)
                     iter += 1
-                    if iter >= 10:
+                    if iter > 10:
                         break
-                except KeyError:
+                    clusterings, scores = hgfc.h_cluster(consol_wordlist, sims, sils,
+                                                         rand_seed=rand_seed+iter)
+                    maxsc = max(scores)
+                except (KeyError, np.linalg.linalg.LinAlgError) as e:
                     continue
 
             labeldict = clusterings[np.argmax(scores)]
@@ -298,6 +307,17 @@ class ParaphraseSet:
         :param vec_dict: {word -> np.array}
         :return:
         '''
+        MINEDIT = {'fulfil': 'fulfill',
+                   'a': 'an',
+                   'learnt': 'learned',
+                   'counselling': 'counseling',
+                   'arse': 'ass',
+                   'marvellous': 'marvelous',
+                   'st.': 'st',
+                   'dependant': 'dependent',
+                   'draught': 'draft',
+                   'sainte': 'saint',
+                   'doughnut': 'donut'}
         veckeys = set(vec_dict.keys())
         for p in self.pp_dict.itervalues():
             try:
@@ -305,7 +325,7 @@ class ParaphraseSet:
             except KeyError:
                 # Check to see whether pieces of the composition are in the dict
                 pieces = flatten([ww.split('-') for ww in p.word.split('_')])
-                v = np.zeros(vec_dict.values()[0].shape[0])
+                v = np.zeros(vec_dict['the'].shape[0])
                 n = 0
                 for wrd in pieces:
                     if wrd in veckeys:
@@ -314,6 +334,9 @@ class ParaphraseSet:
                     elif try_americanize(wrd, veckeys) is not None:
                         proxy = try_americanize(wrd, veckeys)
                         v += vec_dict[proxy]
+                        n += 1
+                    elif wrd in MINEDIT:
+                        v += vec_dict[MINEDIT[wrd]]
                         n += 1
                     elif len(wrd) > 1 and wrd[-1]=='s' and wrd[:-1] in veckeys:
                         proxy = wrd[:-1]

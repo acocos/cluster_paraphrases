@@ -8,13 +8,16 @@ import numpy as np
 from sklearn.metrics import silhouette_score
 import networkx as nx
 
-def gfact(W, m):
+def gfact(W, m, rand_seed=None):
     '''
     Factorize W to obtain bipartite graph K with adjacency matrix B
     :param W: similarity matrix (n x n)
     :param m: number of clusters
     :return: adjacency matrix B (n x m), vector L (length m)
     '''
+    if rand_seed is not None:
+        np.random.seed(rand_seed)
+    
     n = W.shape[0]
     H = np.random.rand(n,m) + 1.
     # H = H / H.sum(axis=0)[np.newaxis,:]  # normalize cols = 1
@@ -46,7 +49,7 @@ def gfact(W, m):
     return B, L
 
 
-def hgfc(W, m=None, thresh=0.01):
+def hgfc(W, m=None, thresh=0.01, rand_seed=None):
     '''
     Perform Hierarchical Graph Factorization Clustering
     If m is not given, will continue until the number of non-zero
@@ -69,7 +72,7 @@ def hgfc(W, m=None, thresh=0.01):
     # e = E
     while cluscnt > 1:
 
-        B, L = gfact(W, Ms[-1])  # factorize G_{l-1} to obtain bitartite graph K with adjacency matrix B_l
+        B, L = gfact(W, Ms[-1], rand_seed=rand_seed)  # factorize G_{l-1} to obtain bitartite graph K with adjacency matrix B_l
         Bs.append(B)
 
         D = np.diag(np.sum(B,axis=1))
@@ -105,9 +108,12 @@ def labeldict(a, wordlist):
 def labels(a):
     return np.array([np.argmax(row) for row in a])
 
-def h_cluster(wordlist, sims, distmat, thresh=0.01):
+def flatten(l):
+    return [item for sublist in l for item in sublist]
 
-    B_, Bs, Ms, Ts, As = hgfc(sims, thresh=thresh)
+def h_cluster(wordlist, sims, distmat, thresh=0.01, rand_seed=None):
+
+    B_, Bs, Ms, Ts, As = hgfc(sims, thresh=thresh, rand_seed=rand_seed)
 
     sil_coefs = []
     for i,a in enumerate(As):
@@ -116,12 +122,16 @@ def h_cluster(wordlist, sims, distmat, thresh=0.01):
             sil_coefs.append(silhouette_score(distmat, labels(a), metric='precomputed'))
         else:
             sil_coefs.append(0.0)
+    
     ld = [labeldict(a,wordlist) for a in As]
-    return ld, sil_coefs
+    ld_filt, sil_coefs_filt = zip(*[(lbldct, sc) for lbldct, sc in zip(ld, sil_coefs) 
+                                    if len(set(flatten(lbldct.values())))>0])
+    
+    return ld_filt, sil_coefs_filt
 
 
-def h_cluster_tree(wordlist, sims, thresh=0.01):
-    B_, Bs, Ms, Ts, As = hgfc(sims, thresh=thresh)
+def h_cluster_tree(wordlist, sims, thresh=0.01, rand_seed=None):
+    B_, Bs, Ms, Ts, As = hgfc(sims, thresh=thresh, rand_seed=None)
 
     # Create tree
     T = nx.DiGraph()

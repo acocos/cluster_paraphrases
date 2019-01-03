@@ -95,7 +95,7 @@ def get_labels(gold, sol):
     return goldlab, sollab, words
 
 
-def score_clustering_solution(tgt, sol, gold, tempdir='eval/semeval_unsup_eval/keys', use_sklearn_vmeas=False, semeval_root='eval/semeval_unsup_eval'):
+def score_clustering_solution(tgt, sol, gold, tempdir='../eval/semeval_unsup_eval/keys', use_sklearn_vmeas=True, semeval_root='../eval/semeval_unsup_eval'):
     '''
     Score clustering solution sol against gold classes.
     Both the sol and gold are passed as dictionaries with integer keys (value
